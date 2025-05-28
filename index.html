@@ -40,19 +40,33 @@
         </ul>
     </section>
 
-    <form action="" method="post"> 
-        <fieldset>
-            FICHA DE INSCRIÇÃO
-        </fieldset>
-       
-        <fieldset>
-        <label for="text"> Nome Completo: </label>
-        <input type="text" name="Nome" id="Nome">
-        <br>
-        <label for="email"> E-mail: </label>
-        <input type="email">
-        </fieldset>
+    <section>
+        <form action="" method="post"> 
+            <fieldset>
+                FICHA DE INSCRIÇÃO
+            </fieldset>
+           
+            <fieldset>
+            <label for="text"> Nome Completo: </label>
+            <input type="text" name="Nome" id="Nome" required>
+            <br>
+            <label for="email"> E-mail: </label>
+            <input type="email" name="email" id="email" required>
+            </fieldset>
 
+            <fieldset>
+                <label for="text"> Tipo de Ingresso: </label>
+                <label for="Presencial">Presencial</label>
+                <input type="radio" name="text" id="Presencial">
+                <label for="Online"> Online </label>
+                <input type="radio" name="text" id="Online"> <br>
+                <br>
+                <input type="checkbox">
+                <label for="text">Aceitar os termos</label> <br>
+                <br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+    </section>
     </form>
 </body>
 </html>
