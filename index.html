@@ -1,72 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFuture</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>TechFuture Summit</h1>
     </header>
-    <section>
+
+    <nav>
+        <ul style="list-style-type: none;" class="nav-list"> 
+            <li><a href="#Sobre">SOBRE O EVENTO</a></li> 
+            <li><a href="#Palestrantes">PALESTRANTES</a></li>
+            <li><a href="#Inscrição">INSCRIÇÃO</a></li>
+        </ul>
+    </nav>
+
+    <section id="Sobre">
         <h3>Sobre o Evento</h3>
         <ul style="list-style-type: none;">
-            <li>Data:</li> 
-            <li>Local:</li> 
-            <li>Resumo do tema:</li>
+            <li>Data: 03/06/2025 ás 20:00hs</li> 
+            <li>Local: Centro de Conveções</li> 
+            <li>Resumo do Tema: Um encontro com executivos apresentando casos reais e o impacto estratégico da TI no centro das decisões.</li>
         </ul>
     </section>
 
-    <section>
+    <section id="Palestrantes">
         <h3>Palestrantes</h3>
-        <ul style="list-style-type: none;">
-            <img src="imagem/Bill_Gates_200316_090318 (1).jpg" alt="" width="80px" height="100px">
-            <li>Bill Gates</li>
-            <p>Bill Gates (1955) é um empresário norte-americano, um dos fundadores da Microsoft, uma gigante desenvolvedora de softwares. <br> Magnata e filantropo é considerado um dos homens mais ricos do mundo.</p>
-        </ul>
-        
-        <ul style="list-style-type: none;">
-            <img src="imagem/Bill_Gates_200316_090318 (1).jpg" alt="" width="80px" height="100px">
-            <li>Bill Gates</li>
-            <p>Bill Gates (1955) é um empresário norte-americano, um dos fundadores da Microsoft, uma gigante desenvolvedora de softwares. <br> Magnata e filantropo é considerado um dos homens mais ricos do mundo.</p>
-        </ul>
 
-        <ul style="list-style-type: none;">
-            <img src="imagem/Bill_Gates_200316_090318 (1).jpg" alt="" width="80px" height="100px">
-            <li>Bill Gates</li>
-            <p>Bill Gates (1955) é um empresário norte-americano, um dos fundadores da Microsoft, uma gigante desenvolvedora de softwares. <br> Magnata e filantropo é considerado um dos homens mais ricos do mundo.</p>
-        </ul>
+            <div class="Palestrantes">
+                <img src="imagem/20241220_192016.jpg" alt="Kananda Araújo" width="80px" height="100px">
+                <h4>Kananda Araújo</h4>
+                <h6>CEO</h6>
+                <p>DEV em Frontend e Linguagem de Programação.</p> <br>
+            </div>
+
+            <div>
+                <img src="imagem/IMG-20250601-WA0088.jpg" alt="Rayane Viana" width="80px" height="100px">
+                <h4>Rayane Viana</h4>
+                <h5>Head de TI</h5>
+                <p>Desenvolve a estratégia tecnológica da empresa.</p><br>
+            </div>
+
+            <div>
+                <img src="imagem/Bill_Gates_200316_090318 (1).jpg" alt="" width="80px" height="100px">
+                <h4>Bill Gates</h4>
+                <h5>Diretor</h5>
+                <p>Bill Gates (1955) é um empresário norte-americano, um dos fundadores da Microsoft, uma gigante desenvolvedora de softwares, Magnata e filantropo é considerado um dos homens mais ricos do mundo.</p>
+            </div>
     </section>
 
-    <section>
+    <section id="Inscrição">
+        <h3>Inscrição</h3>
+
         <form action="" method="post"> 
             <fieldset>
-                FICHA DE INSCRIÇÃO
-            </fieldset>
+                <legend>FICHA DE INSCRIÇÃO</legend>
            
-            <fieldset>
-            <label for="text"> Nome Completo: </label>
-            <input type="text" name="Nome" id="Nome" required>
-            <br>
-            <label for="email"> E-mail: </label>
-            <input type="email" name="email" id="email" required>
-            </fieldset>
+       
+                <label for="none"> Nome Completo: </label>
+                <input type="text" name="Nome" id="Nome" required><br>
 
-            <fieldset>
-                <label for="text"> Tipo de Ingresso: </label>
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" id="email" required><br>
+          
+                <p> Tipo de Ingresso: </p>
                 <label for="Presencial">Presencial</label>
-                <input type="radio" name="text" id="Presencial">
+                <input type="radio" name="ingresso" id="Presencial" value="Presencial">
                 <label for="Online"> Online </label>
-                <input type="radio" name="text" id="Online"> <br>
-                <br>
-                <input type="checkbox">
-                <label for="text">Aceitar os termos</label> <br>
-                <br>
+                <input type="radio" name="ingresso" id="Online" value="Online"> <br><br>
+
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Aceitar os termos</label> <br><br>
+
                 <button type="submit">Enviar</button>
             </fieldset>
+        </form>
     </section>
-    </form>
 </body>
 </html>
